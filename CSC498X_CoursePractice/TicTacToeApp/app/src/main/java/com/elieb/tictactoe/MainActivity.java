@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         happy.animate().translationXBy(1000).rotation(3600).setDuration(2000);
 
 
+
     }
 
     public void toggle(View v){
@@ -44,6 +45,13 @@ public class MainActivity extends AppCompatActivity {
             sad.animate().alpha(0).setDuration(2000);
             is_happy = true;
         }
+
+    }
+    public void clickMe(View v){
+
+            happy.animate().translationYBy(-500).setDuration(2000);
+            happy.animate().translationYBy(500).setDuration(2000);
+
     }
 
 }
