@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         happy = (ImageView) findViewById(R.id.happy);
         sad = (ImageView) findViewById(R.id.sad);
 
+        happy.setX(-1000);
+        happy.animate().translationXBy(1000).rotation(3600).setDuration(2000);
+
+
     }
 
     public void toggle(View v){
@@ -29,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         if(is_happy){
 //            happy.setVisibility(View.INVISIBLE);
 //            sad.setVisibility(View.VISIBLE);
-            happy.animate().alpha(0).setDuration(2000);
+            happy.animate().alpha(0).setDuration(2000); //alpha(0) for invisibility, alpha(1) for visibility
             sad.animate().alpha(1).setDuration(2000);
             is_happy = false;
         }

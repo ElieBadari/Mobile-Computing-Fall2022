@@ -6,16 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/happy"
-        android:layout_width="219dp"
-        android:layout_height="381dp"
-        android:onClick="toggle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/happy" />
+
 
     <ImageView
         android:id="@+id/sad"
@@ -27,4 +18,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/sad" />
+    <ImageView
+        android:id="@+id/happy"
+        android:layout_width="219dp"
+        android:layout_height="381dp"
+        android:onClick="toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/happy" />
 </androidx.constraintlayout.widget.ConstraintLayout>
