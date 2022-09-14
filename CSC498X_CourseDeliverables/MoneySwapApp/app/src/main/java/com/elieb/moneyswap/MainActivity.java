@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         text1 = (TextView) findViewById(R.id.textView1);
         text1.setVisibility(View.INVISIBLE);
+
     }
 
     public void logIn(View v){
@@ -38,8 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
 //            incorrect credentials
             text1.setVisibility(View.VISIBLE);
+//            text1.animate().alpha(1);
+            text1.animate().alpha(0).setDuration(1000);
 
         }
+
 
 
 
