@@ -31,34 +31,43 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.389"
         app:srcCompat="@drawable/arrow1" />
-
-    <EditText
-        android:id="@+id/lbp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Enter USD amount"
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="111dp"
+        android:layout_height="110dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintVertical_bias="0.583"
+        app:srcCompat="@drawable/lira1" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="101dp"
+        android:layout_height="223dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579"
+        app:srcCompat="@drawable/usd1" />
 
     <EditText
-        android:id="@+id/usd"
+        android:id="@+id/money"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
-        android:text="Enter LBP amount"
+        android:text="Enter amount"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.746"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
+        app:layout_constraintVertical_bias="0.253" />
 
     <Button
         android:id="@+id/btn2"
@@ -73,6 +82,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.428" />
+
+    <Switch
+        android:id="@+id/radio1"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:buttonTint="@color/Black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
