@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
         EditText user = findViewById(R.id.username);
         EditText pass = findViewById(R.id.password);
 
+        String username = user.getText().toString();
+        String password = pass.getText().toString();
+
+
+
 
 
     }
