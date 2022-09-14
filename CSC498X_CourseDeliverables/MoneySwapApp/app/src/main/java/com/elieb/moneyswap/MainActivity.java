@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         if(username.equals("user.leb") && password.equals("123456")){
 //            logged in
-//            Intent i = new Intent(getApplicationContext(), );
-//            startActivity(i);
+            Intent i = new Intent(getApplicationContext(), MainActivity2.class);
+            startActivity(i);
 
         }else{
             text1.animate().alpha(1).setDuration(2000);
