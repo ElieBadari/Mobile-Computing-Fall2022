@@ -6,15 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
 
+    TextView text1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        text1 = (TextView) findViewById(R.id.textView1);
+        text1.animate().alpha(0);
     }
 
     public void logIn(View v){
@@ -31,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
 //            startActivity(i);
 
         }else{
+            text1.animate().alpha(1).setDuration(2000);
 //            incorrect credentials
-            
+
         }
 
 
