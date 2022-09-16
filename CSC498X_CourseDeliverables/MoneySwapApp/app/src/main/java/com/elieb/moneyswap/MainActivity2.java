@@ -10,6 +10,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class MainActivity2 extends AppCompatActivity {
 
     @Override
@@ -30,10 +32,14 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (choice.isChecked()){
+
                     amount_to_disp.setText("The amount in USD = " + money/40000);
 
                 }else{
-                    amount_to_disp.setText("The amount in LBP = " + money*40000);
+                    float to_disp = money*40000 ;
+                    DecimalFormat df = new DecimalFormat("#");
+                    df.setMaximumFractionDigits(0);
+                    amount_to_disp.setText("The amount in LBP = " + df.format(to_disp));
                 }
             }
         });

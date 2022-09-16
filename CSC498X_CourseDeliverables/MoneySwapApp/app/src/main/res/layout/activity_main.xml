@@ -39,7 +39,7 @@
         android:background="@color/DarkGray"
         android:ems="10"
         android:inputType="numberPassword"
-        android:text="password"
+        android:hint="password"
 
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +56,7 @@
         android:background="@color/DarkGray"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Username"
+        android:hint="Username"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
