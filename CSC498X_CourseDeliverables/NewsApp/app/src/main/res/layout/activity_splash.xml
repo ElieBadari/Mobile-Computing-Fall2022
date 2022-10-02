@@ -8,17 +8,27 @@
     android:background="@drawable/newsbg">
 
     <ImageView
-        android:backgroundTint="@color/white"
         android:id="@+id/splashbg"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:background="@drawable/round_style"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4"
 
         />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/newsicon"
+        app:layout_constraintBottom_toBottomOf="@+id/splashbg"
+        app:layout_constraintEnd_toEndOf="@+id/splashbg"
+        app:layout_constraintStart_toStartOf="@+id/splashbg"
+        app:layout_constraintTop_toTopOf="@+id/splashbg"
+        app:layout_constraintVertical_bias="0.557" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
