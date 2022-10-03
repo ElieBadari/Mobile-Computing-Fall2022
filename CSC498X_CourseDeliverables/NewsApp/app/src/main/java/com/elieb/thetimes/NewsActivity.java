@@ -15,6 +15,8 @@ public class NewsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news);
 
         try{
+            SQLiteDatabase sql = this.openOrCreateDatabase("thetimesdb", MODE_PRIVATE, null);
+            sql.execSQL("CREATE TABLE IF NOT EXISTS articles (article_name VARCHAR, author VARCHAR, published_at VARCHAR, location VARCHAR, description VARCHAR)");//author, published at, location, description
 
 
         }catch(Exception e){
