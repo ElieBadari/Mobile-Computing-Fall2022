@@ -48,6 +48,8 @@ public class NewsActivity extends AppCompatActivity {
             while(c.moveToNext()){
                 name = c.getString(article_name_index);
                 article_list.add(name);
+                array_adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, article_list);
+                listview.setAdapter(array_adapter);
             }
             c.close();
 
@@ -56,15 +58,12 @@ public class NewsActivity extends AppCompatActivity {
         }catch(Exception e){
             e.printStackTrace();
         }
-        array_adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, article_list);
-        listview.setAdapter(array_adapter);
+
 
 
         btn.setOnClickListener(view -> {
             Intent i = new Intent(getApplicationContext(),UploadActivity.class);
             startActivity(i);
-
-            
 
         });
 

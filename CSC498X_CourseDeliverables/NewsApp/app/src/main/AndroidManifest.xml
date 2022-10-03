@@ -11,7 +11,8 @@
         android:theme="@style/Theme.TheTimes">
         <activity
             android:name=".UploadActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".NewsActivity"
             android:exported="false"
