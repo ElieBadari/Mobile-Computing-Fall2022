@@ -63,7 +63,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/round_style"
         android:backgroundTint="@color/black"
-        android:ems="7"
+        android:ems="10"
+        android:hint="Enter name"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -78,7 +79,7 @@
     <Button
         android:id="@+id/save"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/round_style"
         android:backgroundTint="@color/black"

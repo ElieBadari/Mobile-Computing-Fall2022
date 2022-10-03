@@ -30,22 +30,23 @@ public class MainActivity extends AppCompatActivity {
 
         sp = getSharedPreferences("com.elieb.thetimes",Context.MODE_PRIVATE);
 
-        name = (EditText) findViewById(R.id.name);
+        name = findViewById(R.id.name);
         user = name.getText().toString();
-        btn = (Button) findViewById(R.id.save);
+        btn = findViewById(R.id.save);
 
         btn.setOnClickListener(view -> {
             name_str = name.getText().toString();
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("com.elieb.thetimes.name",name_str);
             editor.apply();
-            Toast.makeText(getApplicationContext(), "Information Saved, Welcome!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Information Saved, Welcome!", Toast.LENGTH_SHORT).show();
 
-            new Handler().postDelayed(() -> {
-                //ad intent here
+            new Handler().postDelayed( () -> {
                 Intent i = new Intent(getApplicationContext(),NewsActivity.class);
                 startActivity(i);
-            }, 1000);
+            },1000);
+
+
 
         });
 

@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        icon = (ImageView) findViewById(R.id.icon);
+        icon = findViewById(R.id.icon);
         icon.animate().rotationY(360).setDuration(3000);
 
         new Handler().postDelayed(() -> {
