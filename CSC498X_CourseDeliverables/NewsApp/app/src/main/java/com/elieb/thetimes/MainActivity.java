@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
             new Handler().postDelayed(() -> {
                 //ad intent here
-
+                Intent i = new Intent(getApplicationContext(),NewsActivity.class);
+                startActivity(i);
             }, 1000);
 
         });
