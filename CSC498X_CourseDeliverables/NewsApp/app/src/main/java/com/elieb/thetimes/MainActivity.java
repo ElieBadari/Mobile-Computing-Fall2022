@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView icon;
     EditText name;
     String user;
     Button btn;
@@ -28,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        icon = (ImageView) findViewById(R.id.icon);
-        icon.animate().rotationY(360).setDuration(1500);
+
         sp = getSharedPreferences("com.elieb.thetimes",Context.MODE_PRIVATE);
 
         name = (EditText) findViewById(R.id.name);

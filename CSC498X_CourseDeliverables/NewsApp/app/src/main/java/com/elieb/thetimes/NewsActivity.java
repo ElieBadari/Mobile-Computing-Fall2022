@@ -41,13 +41,14 @@ public class NewsActivity extends AppCompatActivity {
                 article_list.add(name);
 
             }
-            array_adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1,article_list);
+
 
 
         }catch(Exception e){
             e.printStackTrace();
         }
-
+        array_adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1,article_list);
+        listview.setAdapter((array_adapter));
 
 
     }
