@@ -2,11 +2,13 @@ package com.elieb.thetimes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -20,6 +22,7 @@ public class NewsActivity extends AppCompatActivity {
     String name;
     Cursor c;
     SQLiteDatabase sql;
+    Button btn;
     int article_name_index;
 
 
@@ -29,6 +32,7 @@ public class NewsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news);
         listview = findViewById(R.id.listview);
         article_list = new ArrayList<String>();
+        btn = (Button)findViewById(R.id.upload);
 
 
         try{
@@ -56,7 +60,13 @@ public class NewsActivity extends AppCompatActivity {
         listview.setAdapter(array_adapter);
 
 
+        btn.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(),UploadActivity.class);
+            startActivity(i);
 
+            
+
+        });
 
     }
 
