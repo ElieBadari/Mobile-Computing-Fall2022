@@ -34,6 +34,7 @@ public class NewsActivity extends AppCompatActivity {
         try{
             sql = this.openOrCreateDatabase("thetimesdb", MODE_PRIVATE, null);
             sql.execSQL("CREATE TABLE IF NOT EXISTS articles (article_name VARCHAR, author VARCHAR, published_at VARCHAR, location VARCHAR, description VARCHAR)");//author, published at, location, description
+//            sql.execSQL("DROP TABLE articles");
 //            sql.execSQL("INSERT INTO articles (article_name, author , published_at , location , description ) VALUES ('I Make Video Games. I Won’t Let My Daughters Play Them.','William Siu','Oct. 2, 2022','NYTimes','I didnt see a problem for a long time. I saw our mission as bringing players joy and entertainment. Knowing all of the techniques we used to induce addiction, I realized I didnt want my children to be exposed to that risk.')");
 //            sql.execSQL("INSERT INTO articles (article_name, author , published_at , location , description ) VALUES ('Kim Kardashian to Pay $1.26 Million to Settle S.E.C. Charges Over Crypto Promotion','Matthew Goldstein','Oct. 3, 2022','NYTimes','The S.E.C. said Ms. Kardashian did not disclose she had been paid to promote a crypto token sold by EthereumMax.')");
 
@@ -51,7 +52,7 @@ public class NewsActivity extends AppCompatActivity {
         }catch(Exception e){
             e.printStackTrace();
         }
-        array_adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,article_list);
+        array_adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, article_list);
         listview.setAdapter(array_adapter);
 
 
