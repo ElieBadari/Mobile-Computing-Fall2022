@@ -44,7 +44,7 @@ public class UploadActivity extends AppCompatActivity {
 
             try{
                 sql.execSQL("CREATE TABLE IF NOT EXISTS articles (article_name VARCHAR, author VARCHAR, published_at VARCHAR, location VARCHAR, description VARCHAR)");
-                sql.execSQL("INSERT INTO articles (article_name, author, published_at, location, description) VALUES (?,?,?,?,?) , (string_article, user, string_date, string_location, string_content)");
+                sql.execSQL("INSERT INTO articles (article_name, author, published_at, location, description) VALUES (string_article + '',user+'',string_date+'',string_location+'',string_content +'') ");
 
 
             }catch (Exception e){
