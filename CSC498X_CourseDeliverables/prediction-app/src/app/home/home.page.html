@@ -20,7 +20,7 @@
   </div> -->
   <div class="main-container">
     <div class="img-container">
-      <img class = "dog-image" src="https://ionicframework.com/docs/img/demos/card-media.png" alt="picture of a dog">
+      <img id = "dog-img" class = "dog-image" src="https://ionicframework.com/docs/img/demos/card-media.png" alt="picture of a dog">
     </div>
     
     <div class="btn-container">
@@ -31,7 +31,7 @@
     </div>
     
     <div class="btn-container2">
-      <ion-button
+      <ion-button [routerLink] = "['/prediction']"
       expand = "block"
       shape = "round"
       color = "danger"
