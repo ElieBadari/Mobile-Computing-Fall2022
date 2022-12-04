@@ -19,6 +19,7 @@
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div> -->
   <div class="main-container">
+
     <div class="img-container">
       <img class = "dog-image" src= "{{image}}" alt="picture of a dog">
     </div>
@@ -30,14 +31,23 @@
       color = "danger"
       size = "small"> Anoda one</ion-button>
     </div>
-    
+
+    <div class="text-container">
+      <p> If you give me your name, I can guess your age, nationality and gender</p>
+    </div>
+
+    <div class="input-container">
+      <ion-input class="input-name" placeholder="Enter name"></ion-input>
+    </div>
+  
     <div class="btn-container2">
-      <ion-button [routerLink] = "['/prediction']"
-      expand = "block"
+      <ion-button 
+      [routerLink] = "['/prediction']"
       shape = "round"
       color = "danger"
-      size = "large"><ion-icon slot="end" name="arrow-forward-outline"></ion-icon>predict</ion-button>
+      size = "medium"><ion-icon slot="end" name="arrow-forward-outline"></ion-icon>predict</ion-button>
     </div>
+    
   </div>
   
 
