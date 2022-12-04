@@ -37,17 +37,17 @@
     </div>
 
     <div class="input-container">
-      <ion-input class="input-name" placeholder="Enter name"></ion-input>
+      <ion-input class="input-name" placeholder="Enter name" [(ngModel)] = 'name'></ion-input>
     </div>
   
-    <div class="btn-container2">
+    <div id = "predict" class="btn-container2">
       <ion-button 
-      [routerLink] = "['/prediction']"
+      (click) = "predictMe()"
       shape = "round"
       color = "danger"
       size = "medium"><ion-icon slot="end" name="arrow-forward-outline"></ion-icon>predict</ion-button>
     </div>
-    
+
   </div>
   
 

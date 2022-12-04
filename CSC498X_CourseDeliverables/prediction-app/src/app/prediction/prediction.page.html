@@ -1,9 +1,35 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>prediction</ion-title>
+    <ion-title>predictio</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <div class="main-container">
+    <div class="content-container">
+      <ion-list>
+        <ion-item>
+          <ion-label>
+            Gender: {{gender}}
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          nationality: {{nationality}}
+        </ion-item>
+        <ion-item>
+          age: {{age}}
+        </ion-item>
+      </ion-list>
+    </div>
+    <div class="btn-container">
+        <ion-button 
+          [routerLink] = "['/home']"
+          shape = "round"
+          color = "danger"
+          size = "medium">
+          <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+          dogoz
+        </ion-button>
+    </div>
+  </div>
 </ion-content>

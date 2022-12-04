@@ -12,5 +12,16 @@ export class ApisService {
   getImage(): Observable<any>{
     return this.http.get<any>('https://dog.ceo/api/breeds/image/random');
   }
+  getGender(name:string): Observable<any>{
+    return this.http.get<any>('https://api.genderize.io?name=' + name);
+  }
+
+  getNationality(name:string): Observable<any>{
+    return this.http.get<any>('https://api.nationalize.io/?name=' + name);
+  }
+
+  getAge(name:string): Observable<any>{
+    return this.http.get<any>('https://api.agify.io/?name=' + name);
+  }
 
 }
