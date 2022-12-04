@@ -11,7 +11,7 @@ export class PredictionPage implements OnInit {
 
   public name: string = '';
   public gender : string = '';
-  public nationality : string = ''; 
+  public nationality : string = '';
   public age :  string = '';
 
   constructor(private apiService:ApisService, private route: ActivatedRoute, private router : Router) { }
@@ -26,7 +26,15 @@ export class PredictionPage implements OnInit {
     });
 
     this.apiService.getNationality(this.name).subscribe((response: any) => {
-      this.nationality = response;
+      const display : any[] = []; 
+      let disp : any = "";
+      for (let countryobj in response.country) {
+        display.push(response.country[countryobj].country_id);
+      }
+      disp = display.join(", ");
+
+      this.nationality = disp;
+
     });
 
     this.apiService.getAge(this.name).subscribe((response: any) => {

@@ -18,6 +18,7 @@ export class ApisService {
 
   getNationality(name:string): Observable<any>{
     return this.http.get<any>('https://api.nationalize.io/?name=' + name);
+    
   }
 
   getAge(name:string): Observable<any>{
