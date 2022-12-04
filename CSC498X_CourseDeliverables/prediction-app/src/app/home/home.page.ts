@@ -34,7 +34,7 @@ export class HomePage {
         }
       };
       
-    this.router.navigate(['/predictions'], navigationExtras);
+    this.router.navigate(['prediction'], navigationExtras);
   }
 }
 
